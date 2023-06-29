@@ -21,9 +21,11 @@ public class MainActivity extends AppCompatActivity {
         binding.btnSavePicture.setOnClickListener(v -> showMessage("Imagen guardada"));
         binding.btnUnlockLevel5.setOnClickListener(v -> showMessage("Nivel 5 desbloqueado"));
         binding.btnLvl4Complete.setOnClickListener(v -> showMessage("Nivel 4 completo"));
-        binding.btnMusicPaused.setOnClickListener(v -> showMessage("Música pusada"));
+        binding.btnMusicPaused.setOnClickListener(v -> showMessage("Música pausada"));
 
     }
+
+
 
     private void showMessage(String mensaje){
         Toast.makeText(getApplicationContext(),mensaje, Toast.LENGTH_LONG).show();
